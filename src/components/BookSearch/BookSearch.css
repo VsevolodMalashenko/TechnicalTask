@@ -1,0 +1,247 @@
+.search-bar {
+  margin-bottom: 20px;
+  height: 300px;
+  background-image: url(../../assets/Book.png);
+  background-size: cover;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.search-bar__heading {
+  color: #fff;
+  font-size: 50px;
+  padding: 40px;
+  padding-bottom: 20px;
+}
+
+.search-bar__main-align {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.search-bar__main-button {
+  position: absolute;
+  top: 15px;
+  right: 27vw;
+  cursor: pointer;
+  width: 40px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-bar__main {
+  width: 45%;
+  height: 22px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.search-bar__select-explanatory {
+  display: inline;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.search-bar__select {
+  margin: 5px;
+  padding: 10px;
+  height: 42px;
+  width: 200px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.book-search__error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book-search__results-info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-list__card {
+  margin: 25px;
+  padding: 10px;
+  width: 290px;
+  height: 400px;
+  text-align: left;
+  background-color: #eff2f2;
+  position: relative; 
+  cursor: pointer;
+}
+
+.book-list__card-content {
+  margin-left: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.book-list__card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-list__card-image img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.book-list__card-title {
+  font-size: 1.1em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-list__card-authors {
+  margin: 0;
+  font-size: 0.9em;
+  color: #999;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-list__card-categories {
+  margin: 0;
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-search__load-more {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 1151px) and (max-width: 1400px) {
+  .search-bar__select {
+    margin: 5px;
+    padding: 10px;
+    height: 42px;
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 1150px) {
+  .search-bar__select-explanatory {
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .search-bar__select {
+    margin: 5px;
+    padding: 10px;
+    height: 42px;
+    width: 130px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 510px) {
+  .search-bar__heading {
+    color: #fff;
+    font-size: 38px;
+    padding: 40px;
+    padding-bottom: 20px;
+  }
+
+  .search-bar__select-explanatory {
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .search-bar__select {
+    margin: 5px;
+    padding: 10px;
+    height: 42px;
+    width: 80px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .search-bar__heading {
+    color: #fff;
+    font-size: 25px;
+    padding: 40px;
+    padding-bottom: 20px;
+  }
+
+  .search-bar__select-explanatory {
+    display: inline;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .search-bar__select {
+    margin: 5px;
+    padding: 10px;
+    height: 42px;
+    width: 56px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+}
